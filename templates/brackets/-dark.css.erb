@@ -1,0 +1,134 @@
+/*
+
+    Name:       Base16 <%= @scheme %> Dark
+    Author:     <%= @author %>
+
+    CodeMirror template by Jan T. Sott (https://github.com/idleberg/base16-chrome-devtools)
+    Brackets additions by Michaël Ball (https://github.com/michael-ball)
+    Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16)
+
+*/
+
+.cm-s-base16-<%= @slug %>-dark.CodeMirror {background: #<%= @base["00"]["hex"] %>; color: #<%= @base["06"]["hex"] %>;}
+.cm-s-base16-<%= @slug %>-dark div.CodeMirror-selected {background: #<%= @base["01"]["hex"] %> !important;}
+.cm-s-base16-<%= @slug %>-dark .CodeMirror-gutters {background: #<%= @base["00"]["hex"] %>; border-right: 0px;}
+.cm-s-base16-<%= @slug %>-dark .CodeMirror-linenumber {color: #<%= @base["03"]["hex"] %>;}
+.cm-s-base16-<%= @slug %>-dark .CodeMirror-cursor {border-left: 1px solid #<%= @base["04"]["hex"] %> !important;}
+
+.cm-s-base16-<%= @slug %>-dark span.cm-comment {color: #<%= @base["0F"]["hex"] %>;}
+.cm-s-base16-<%= @slug %>-dark span.cm-atom {color: #<%= @base["0E"]["hex"] %>;}
+.cm-s-base16-<%= @slug %>-dark span.cm-number {color: #<%= @base["0E"]["hex"] %>;}
+
+.cm-s-base16-<%= @slug %>-dark span.cm-property, .cm-s-base16-<%= @slug %>-dark span.cm-attribute {color: #<%= @base["0B"]["hex"] %>;}
+.cm-s-base16-<%= @slug %>-dark span.cm-keyword {color: #<%= @base["08"]["hex"] %>;}
+.cm-s-base16-<%= @slug %>-dark span.cm-string {color: #<%= @base["0A"]["hex"] %>;}
+
+.cm-s-base16-<%= @slug %>-dark span.cm-variable {color: #<%= @base["0B"]["hex"] %>;}
+.cm-s-base16-<%= @slug %>-dark span.cm-variable-2 {color: #<%= @base["0D"]["hex"] %>;}
+.cm-s-base16-<%= @slug %>-dark span.cm-def {color: #<%= @base["09"]["hex"] %>;}
+.cm-s-base16-<%= @slug %>-dark span.cm-error {background: #<%= @base["08"]["hex"] %>; color: #<%= @base["04"]["hex"] %>;}
+.cm-s-base16-<%= @slug %>-dark span.cm-bracket {color: #<%= @base["06"]["hex"] %>;}
+.cm-s-base16-<%= @slug %>-dark span.cm-tag {color: #<%= @base["08"]["hex"] %>;}
+.cm-s-base16-<%= @slug %>-dark span.cm-link {color: #<%= @base["0E"]["hex"] %>;}
+
+.cm-s-base16-<%= @slug %>-dark .CodeMirror-matchingbracket { text-decoration: underline; color: #<%= @base["07"]["hex"] %> !important;}
+
+
+#open-files-container a {
+    color: #<%= @base["07"]["hex"] %>;
+}
+#open-files-container .extension, #open-files-container .directory {
+    color: #<%= @base["04"]["hex"] %>;
+}
+#open-files-container li.selected a, #open-files-container li.selected a .extension {
+    color: #<%= @base["0C"]["hex"] %>;
+} 
+
+#working-set-header,#project-files-header, #open-files-container{ /* Working files */
+    background: rgba(0,0,0,0.12); 
+    color: #<%= @base["06"]["hex"] %>;
+}
+#sidebar, #main-toolbar, #status-bar, .inline-widget{
+    background: #<%= @base["00"]["hex"] %>;
+}
+
+#project-files-header { 
+    border-top: 1px solid #<%= @base["03"]["hex"] %>;
+}
+
+#project-dropdown-toggle:hover{ /* Open url when hover */
+    color: #<%= @base["0A"]["hex"] %>!important;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+#status-bar{
+    border-top:1px solid #<%= @base["01"]["hex"] %>;
+    color: #<%= @base["0B"]["hex"] %>;
+}
+
+.sidebar-selection, .sidebar-selection-triangle{ /* Selected file or folder */
+    background:#<%= @base["01"]["hex"] %>;
+}
+.sidebar-selection-triangle.triangle-visible::before{
+    border-left:12px solid #<%= @base["01"]["hex"] %>;
+}
+.jstree-brackets li.git-ignored {
+    color: #<%= @base["04"]["hex"] %>;
+}
+.jstree-brackets li.jstree-closed>a, .jstree-brackets li.jstree-open>a,.git-close-not-modified i {
+    color: #<%= @base["0D"]["hex"] %>;
+}
+.jstree-brackets li a.jstree-clicked, .jstree-brackets li a.jstree-clicked .extension {
+    color: #<%= @base["0C"]["hex"] %>;
+}
+.jstree-brackets li a {
+    color: #<%= @base["07"]["hex"] %>;
+}
+.jstree-brackets li .extension {
+    color: #<%= @base["06"]["hex"] %>;
+}
+
+.cm-s-base16-<%= @slug %>-dark .CodeMirror-matchingbracket { text-decoration: underline; color: #<%= @base["07"]["hex"] %> !important;}
+
+#titlebar,
+#status-bar,
+#status-indicators,
+#editor-holder #not-editor {
+    background-color: #<%= @base["01"]["hex"] %>;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+#titlebar {
+    height: 14px;
+}
+
+#titlebar .title-wrapper {
+    display: none;
+}
+
+#status-info,
+#status-indicators * {
+    color: #<%= @base["07"]["hex"] %>;
+}
+#status-file {
+    color: #<%= @base["06"]["hex"] %>;
+}
+
+.toolbar .nav .dropdown-toggle {
+    padding: 2px 5px 1px !important;
+    font-size: 13px;
+    color: #<%= @base["06"]["hex"] %>;
+}
+
+.toolbar .nav .dropdown-toggle:hover {
+    color: inherit;
+}
+
+.toolbar .nav .dropdown-menu {
+    top: 23px;
+}
+
+.cm-s-base16-<%= @slug %>-dark {
+    font-family: "Envy Code R";
+    font-size: 10pt;
+}
